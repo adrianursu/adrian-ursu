@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         burtons: "burtons",
+        courierPrime: "courierPrime",
       },
     },
   },

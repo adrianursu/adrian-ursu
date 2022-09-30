@@ -1,24 +1,19 @@
 import Head from "next/head";
-import {
-  AiFillFacebook,
-  AiFillInstagram,
-  AiFillLinkedin,
-  AiFillGithub,
-} from "react-icons/ai";
+import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { useEffect, useState } from "react";
-import adrian from "../public/adrian.png";
 import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
 import Image from "next/image";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
 import { useTheme } from "next-themes";
+import adrian from "../public/adrian.jpg";
+import maiestria from "../public/laptop.jpg";
+import chat from "../public/chat-bachelor.jpg";
+import myPaint from "../public/my-paint.jpg";
+import dashboard from "../public/creative-tim.jpg";
+import dogs from "../public/dogs.jpg";
+import magdacesti from "../public/magdacesti.jpg";
 
 export default function Home() {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -44,7 +39,7 @@ export default function Home() {
     } else {
       return (
         <BsFillMoonStarsFill
-          className="cursor-pointer text-2xl"
+          className="cursor-pointer text-2xl text-gray-700"
           onClick={() => {
             setTheme("dark");
           }}
@@ -63,13 +58,14 @@ export default function Home() {
       <main className="bgLight px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="pt-10 pb-8 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-xl"></h1>
+            <h1 className="font-courierPrime text-xl">&lt;/&gt;</h1>
             <ul className="flex items-center">
               <li>{renderThemeChanger()}</li>
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="#"
+                  href="../public/cv.pdf"
+                  download
                 >
                   Resume
                 </a>
@@ -88,7 +84,15 @@ export default function Home() {
               fresh graduate in Computer Science. Recently relocated to
               Copenhagen, looking for new opportunities.
             </p>
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+            <div className="mx-auto rounded-full w-80 h-80 relative overflow-hidden mt-5 md:h-96 md:w-96">
+              <Image
+                src={adrian}
+                layout="fill"
+                objectFit="cover"
+                alt="image of Adrian Ursu"
+              />
+            </div>
+            <div className="text-5xl flex justify-center gap-16 pt-6 text-gray-600 dark:text-gray-400">
               <a
                 target="_blank"
                 href="https://www.github.com/adrianursu"
@@ -96,74 +100,95 @@ export default function Home() {
               >
                 <AiFillGithub />
               </a>
-              <AiFillFacebook />
-              <AiFillInstagram />
-              <AiFillLinkedin />
-            </div>
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-5 md:h-96 md:w-96">
-              <Image src={adrian} layout="fill" objectFit="cover" />
+              <a
+                target="_blank"
+                href="https://www.instagram.com/adrian.ursu8"
+                rel="noreferrer"
+              >
+                <AiFillInstagram />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/ursu-adrian-9487461b9/"
+              >
+                <AiFillLinkedin />
+              </a>
             </div>
           </div>
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Services I offer</h3>
+            <h3 className="text-3xl py-1 dark:text-white ">
+              Educational &#38; Professional Background
+            </h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
+              During the last years I have actively studied to broaden my
+              understanding and skills in IT. Therefore, I have decided that
+              being a <span className="text-teal-500"> front-end </span>
+              developer is the path I want to pursue as this career matches my
+              abilities, needs and passion. I believe that IT is a dynamic,
+              prospective industry, where
+              <span className="text-teal-500"> self-learning</span> and taking
+              additional courses is a key to factor to success.
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image src={design} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-800  ">
-                Beautiful Designs
+            <div className="text-center shadow-2xl p-10 rounded-xl my-10  dark:bg-gray-800 flex-1">
+              <Image src={design} width={100} height={100} alt="image-design" />
+              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">
+                2018-2022
               </h3>
-              <p className="py-2 dark:text-gray-800">
-                Creating elegant designs suited for your needs following core
-                design theory.
+              <p className="py-2 dark:text-gray-200">
+                Bachelor Degree in Computer Science. University &quot;Lucian
+                Blaga&quot; of Sibiu, Romania.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <h4 className="py-4 text-teal-600">Skills Acquired</h4>
+              <p className="dark:text-gray-200 py-1">
+                Data Structures &#38; Algorithms
+              </p>
+              <p className="dark:text-gray-200 py-1">OOP</p>
+              <p className="dark:text-gray-200 py-1">Clean Code</p>
+              <p className="dark:text-gray-200 py-1">
+                C++ / Java / HTML5 / CSS3 / Linux / MySQL
+              </p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={code} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">
-                Code your dream project
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
+              <Image src={code} width={100} height={100} alt="code-image" />
+              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200 ">
+                2020-2021
               </h3>
-              <p className="py-2">
-                Do you have an idea for your next great website? Let's make it a
-                reality.
+              <p className="text-gray-200 py-2">
+                Remote Learning and Summer Intern at Nagarro Company (Sibiu)
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <h4 className="py-4 text-teal-600">Skills Acquired</h4>
+              <p className="text-gray-200 py-1">
+                Java / Maven / SpringBoot / Hibernate
+              </p>
+              <p className="text-gray-200 py-1">Design Patterns</p>
+              <p className="text-gray-200 py-1">Agile Methodologies</p>
+              <p className="text-gray-200 py-1">Git</p>
+              <p className="text-gray-200 py-1">UML Diagrams</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={consulting} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
-              <p className="py-2">
-                Are you interested in feedback for your current project? I can
-                give you tips and tricks to level it up.
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
+              <Image
+                src={consulting}
+                width={100}
+                height={100}
+                alt="like-image"
+              />
+              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">
+                2021
+              </h3>
+              <p className="text-gray-200 py-2">
+                Front-end Developer Intern at Creative Tim Company (Bucharest)
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <h4 className="py-4 text-teal-600">Skills Acquired</h4>
+              <p className="text-gray-200 py-1">Javascript</p>
+              <p className="text-gray-200 py-1">React.js</p>
+              <p className="text-gray-200 py-1">Material UI</p>
+              <p className="text-gray-200 py-1">JSS</p>
+              <p className="text-gray-200 py-1">UI / UX Best Practices</p>
             </div>
           </div>
         </section>
@@ -171,16 +196,7 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
+              Here are some past projects I have worked on.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
@@ -190,7 +206,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web1}
+                src={maiestria}
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -199,7 +215,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web2}
+                src={chat}
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -208,7 +224,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web3}
+                src={myPaint}
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -217,7 +233,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web4}
+                src={dashboard}
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -226,7 +242,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web5}
+                src={dogs}
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -235,7 +251,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web6}
+                src={magdacesti}
               />
             </div>
           </div>
