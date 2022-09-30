@@ -154,24 +154,24 @@ export default function Home() {
                 C++ / Java / HTML5 / CSS3 / Linux / MySQL
               </p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
+            <div className="text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
               <Image src={code} width={100} height={100} alt="code-image" />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200 ">
                 2020-2021
               </h3>
-              <p className="text-gray-200 py-2">
+              <p className=" py-2 dark:text-gray-200">
                 Remote Learning and Summer Intern at Nagarro Company (Sibiu)
               </p>
               <h4 className="py-4 text-teal-600">Skills Acquired</h4>
-              <p className="text-gray-200 py-1">
+              <p className=" py-1 dark:text-gray-200">
                 Java / Maven / SpringBoot / Hibernate
               </p>
-              <p className="text-gray-200 py-1">Design Patterns</p>
-              <p className="text-gray-200 py-1">Agile Methodologies</p>
-              <p className="text-gray-200 py-1">Git</p>
-              <p className="text-gray-200 py-1">UML Diagrams</p>
+              <p className=" py-1 dark:text-gray-200">Design Patterns</p>
+              <p className=" py-1 dark:text-gray-200">Agile Methodologies</p>
+              <p className=" py-1 dark:text-gray-200">Git</p>
+              <p className=" py-1 dark:text-gray-200">UML Diagrams</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
+            <div className="text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
               <Image
                 src={consulting}
                 width={100}
@@ -181,15 +181,15 @@ export default function Home() {
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">
                 2021
               </h3>
-              <p className="text-gray-200 py-2">
+              <p className=" py-2 dark:text-gray-200">
                 Front-end Developer Intern at Creative Tim Company (Bucharest)
               </p>
               <h4 className="py-4 text-teal-600">Skills Acquired</h4>
-              <p className="text-gray-200 py-1">Javascript</p>
-              <p className="text-gray-200 py-1">React.js</p>
-              <p className="text-gray-200 py-1">Material UI</p>
-              <p className="text-gray-200 py-1">JSS</p>
-              <p className="text-gray-200 py-1">UI / UX Best Practices</p>
+              <p className=" py-1 dark:text-gray-200">Javascript</p>
+              <p className=" py-1 dark:text-gray-200">React.js</p>
+              <p className=" py-1 dark:text-gray-200">Material UI</p>
+              <p className=" py-1 dark:text-gray-200">JSS</p>
+              <p className=" py-1 dark:text-gray-200">UI / UX Best Practices</p>
             </div>
           </div>
         </section>
@@ -208,6 +208,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={maiestria}
+                alt="maiestria.com"
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -217,6 +218,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={chat}
+                alt="chat app"
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -226,6 +228,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={myPaint}
+                alt="paint done in c#"
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -235,6 +238,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={dashboard}
+                alt="creative-tim-dashboard"
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -244,6 +248,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={dogs}
+                alt="dogs-breeds-project"
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -253,6 +258,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={magdacesti}
+                alt="magdacesti.md"
               />
             </div>
           </div>
