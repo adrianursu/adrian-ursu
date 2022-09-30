@@ -64,8 +64,9 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="../public/cv.pdf"
-                  download
+                  href="https://raw.githubusercontent.com/adrianursu/adrianursu.github.io/main/public/cv.pdf"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   Resume
                 </a>
