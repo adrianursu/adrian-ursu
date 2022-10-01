@@ -57,7 +57,7 @@ export default function Home() {
       </Head>
       <main className="bgLight px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
-          <nav className="pt-10 pb-8 mb-12 flex justify-between dark:text-white">
+          <nav className="pt-10 pb-8 mb-6 flex justify-between dark:text-white md:mb-12">
             <h1 className="font-courierPrime text-xl">&lt;/&gt;</h1>
             <ul className="flex items-center">
               <li>{renderThemeChanger()}</li>
@@ -80,7 +80,7 @@ export default function Home() {
             <h3 className="text-lg py-2 dark:text-white md:text-3xl">
               Front-End Developer
             </h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl md:py-5">
               I am an ambitious and progress-focused young frontend developer,
               fresh graduate in Computer Science. Recently relocated to
               Copenhagen, looking for new opportunities.
