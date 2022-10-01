@@ -73,7 +73,7 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center pb-10 px-10">
+          <div className="text-center pb-10 px-15 md:px-10">
             <h2 className="text-4xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
               Adrian Ursu
             </h2>
