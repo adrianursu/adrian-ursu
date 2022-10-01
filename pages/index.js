@@ -74,13 +74,13 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center pb-10 px-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+            <h2 className="text-4xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
               Adrian Ursu
             </h2>
-            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
+            <h3 className="text-lg py-2 dark:text-white md:text-3xl">
               Front-End Developer
             </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               I am an ambitious and progress-focused young frontend developer,
               fresh graduate in Computer Science. Recently relocated to
               Copenhagen, looking for new opportunities.
@@ -121,7 +121,7 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">
+            <h3 className="text-2xl py-1 dark:text-white md:text-3xl">
               Educational &#38; Professional Background
             </h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
