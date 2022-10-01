@@ -85,7 +85,7 @@ export default function Home() {
               fresh graduate in Computer Science. Recently relocated to
               Copenhagen, looking for new opportunities.
             </p>
-            <div className="mx-auto rounded-full w-80 h-80 relative overflow-hidden mt-5 md:h-96 md:w-96">
+            <div className="mx-auto rounded-full w-60 h-60 relative overflow-hidden mt-5 md:h-96 md:w-96 lg:h-96 lg:w-96">
               <Image
                 src={adrian}
                 layout="fill"
