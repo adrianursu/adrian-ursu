@@ -186,6 +186,8 @@ export default function Home() {
                   Agile Methodologies
                 </div>
                 <div className="item text-xs  rounded-xl">Design Patterns</div>
+                <div className="item text-xs  rounded-xl">JUnit</div>
+                <div className="item text-xs  rounded-xl">MySQL</div>
               </div>
             </div>
             <div className="text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
@@ -214,6 +216,12 @@ export default function Home() {
                 <div className="item text-xs  rounded-xl">
                   Styled Components
                 </div>
+                <div className="item text-xs  rounded-xl">State Management</div>
+                <div className="item text-xs flex justify-center items-center  rounded-xl">
+                  Git
+                </div>
+                <div className="item text-xs  rounded-xl">ChakraUI</div>
+                <div className="item text-xs  rounded-xl">TailwindCSS</div>
               </div>
             </div>
           </div>
