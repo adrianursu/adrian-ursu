@@ -91,6 +91,7 @@ export default function Home() {
                 layout="fill"
                 objectFit="cover"
                 alt="image of Adrian Ursu"
+                priority
               />
             </div>
             <div className="text-5xl flex justify-center gap-16 pt-6 text-gray-600 dark:text-gray-400">
@@ -201,65 +202,147 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={maiestria}
-                alt="maiestria.com"
-              />
+            <div className="basis-1/3 flex-1 grow">
+              <a
+                href="https://www.maiestria.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Image
+                  className="rounded-lg object-cover cursor-pointer"
+                  width={"100%"}
+                  height={"80%"}
+                  layout="responsive"
+                  src={maiestria}
+                  alt="maiestria.com"
+                />
+
+                <h4 className="text-xl text-center font-courierPrime text-teal-600">
+                  www.maiestria.com
+                </h4>
+              </a>
+              <p className="text-sm">
+                Developed & Customized wordpress e-commerce for a community of
+                15k+ members.
+              </p>
             </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={chat}
-                alt="chat app"
-              />
+            <div className="basis-1/3 flex-1 grow">
+              <a
+                href="https://my-chat-bachelor.herokuapp.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"80%"}
+                  layout="responsive"
+                  src={chat}
+                  alt="chat app"
+                />
+                <h4 className="text-xl text-center font-courierPrime text-teal-600">
+                  myChat
+                </h4>
+              </a>
+              <p className="text-sm">
+                Bachelor application developed using MERN Stack + Socket.IO.
+                ChakraUI used as a design system for the frontend.
+              </p>
             </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={myPaint}
-                alt="paint done in c#"
-              />
+            <div className="basis-1/3 flex-1 grow">
+              <a
+                href="https://github.com/adrianursu/myPaint"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"80%"}
+                  layout="responsive"
+                  src={myPaint}
+                  alt="paint done in c#"
+                />
+                <h4 className="text-xl text-center font-courierPrime text-teal-600">
+                  Paint Clone
+                </h4>
+              </a>
+              <p className="text-sm">
+                Paint clone developed in C# using Windows Forms. Added image
+                processing such as zoom, crop with preview, rotate, flip.
+              </p>
             </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={dashboard}
-                alt="creative-tim-dashboard"
-              />
+            <div className="basis-1/3 flex-1 grow">
+              <a
+                href="https://material-design-dashboard-2.vercel.app/dashboard"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"80%"}
+                  layout="responsive"
+                  src={dashboard}
+                  alt="creative-tim-dashboard"
+                />
+                <h4 className="text-xl text-center font-courierPrime text-teal-600">
+                  Material Dashboard 2
+                </h4>
+              </a>
+              <p className="text-sm">
+                As an Intern at Creative Tim, I was responsible for upgrading
+                one of the products using React + MaterialUI as a design system.
+                I was assigned a mentor who guided me in order to fulfil all the
+                tasks.
+              </p>
             </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={dogs}
-                alt="dogs-breeds-project"
-              />
+            <div className="basis-1/3 flex-1 grow">
+              <a
+                href="https://github.com/adrianursu/dog-api-project"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"80%"}
+                  layout="responsive"
+                  src={dogs}
+                  alt="dogs-breeds-project"
+                />
+                <h4 className="text-xl text-center font-courierPrime text-teal-600">
+                  Dog Breeds
+                </h4>
+              </a>
+              <p className="text-sm">
+                Web app for fetching all the dog breeds and photos of them. Also
+                you can add an image to favorites and delete it. (React, React
+                Router, Axios).
+              </p>
             </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={magdacesti}
-                alt="magdacesti.md"
-              />
+            <div className="basis-1/3 flex-1 grow">
+              <a
+                href="https://www.magdacesti.md"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"80%"}
+                  layout="responsive"
+                  src={magdacesti}
+                  alt="magdacesti.md"
+                />
+                <h4 className="text-xl text-center font-courierPrime text-teal-600">
+                  www.magdacesti.md
+                </h4>
+              </a>
+              <p className="text-sm">
+                Developed & Customized wordpress website of my hometown
+                Măgdăcești.
+              </p>
             </div>
           </div>
         </section>

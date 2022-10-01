@@ -17,6 +17,7 @@ a {
 
 * {
   box-sizing: border-box;
+  /* font-family: courierPrime; */
 }
 
 @keyframes rotate {
@@ -39,4 +40,12 @@ a {
 @font-face {
   font-family: "courierPrime";
   src: url("../public/courierPrime.ttf");
+}
+
+.grow {
+  transition: all 0.3s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.02);
+  border-radius: inherit;
 }
