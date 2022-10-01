@@ -61,7 +61,7 @@ export default function Home() {
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'G-5RX7LM6MXL');
+          gtag('config', 'G-5RX7LM6MXL, {cookie_flags: 'SameSite=None;Secure, cookie_domain: "https://adrian-ursu.vercel.app", }');
         `}
       </Script>
       <Head>
