@@ -52,18 +52,17 @@ export default function Home() {
   return (
     <div>
       <Script
-        strategy="lazyOnLoad"
-        src={"https://www.googletagmanager.com/gtag/js?id=G-5RX7LM6MXL"}
+        src="https://www.googletagmanager.com/gtag/js?id=G-5RX7LM6MXL"
+        strategy="afterInteractive"
       />
-      <Script strategy="lazyOnload">
+      <Script id="google-analytics" strategy="afterInteractive">
         {`
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                    gtag('config', "https://www.googletagmanager.com/gtag/js?id=G-5RX7LM6MXL", {
-                    page_path: window.location.pathname,
-                    });
-                `}
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-5RX7LM6MXL');
+        `}
       </Script>
       <Head>
         <title>Adrian Ursu</title>
