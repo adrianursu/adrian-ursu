@@ -141,36 +141,52 @@ export default function Home() {
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">
                 2018-2022
               </h3>
-              <p className="py-2 dark:text-gray-200">
-                Bachelor Degree in Computer Science. University &quot;Lucian
-                Blaga&quot; of Sibiu, Romania.
+              <p className="py-2 text-xs md:text-sm dark:text-gray-200">
+                Bachelor Degree in Computer Science University &quot;Lucian
+                Blaga&quot; of Sibiu, Romania
               </p>
-              <h4 className="py-4 text-teal-600">Skills Acquired</h4>
-              <p className="dark:text-gray-200 py-1">
-                Data Structures &#38; Algorithms
-              </p>
-              <p className="dark:text-gray-200 py-1">OOP</p>
-              <p className="dark:text-gray-200 py-1">Clean Code</p>
-              <p className="dark:text-gray-200 py-1">
-                C++ / Java / HTML5 / CSS3 / Linux / MySQL
-              </p>
+              <hr className="p-2" />
+
+              <div className="grid grid-cols-2 gap-7 font-courierPrime">
+                <div className="item text-xs rounded-xl">Data Structures</div>
+
+                <div className="item text-xs flex items-center justify-center  rounded-xl">
+                  OOP
+                </div>
+                <div className="item text-xs  rounded-xl">Algorithms</div>
+                <div className="item text-xs  rounded-xl">Clean Code</div>
+                <div className="item text-xs  rounded-xl">C++</div>
+                <div className="item text-xs rounded-xl">Java</div>
+                <div className="item text-xs  rounded-xl">HTML5</div>
+                <div className="item text-xs  rounded-xl">CSS3</div>
+                <div className="item text-xs  rounded-xl">Linux</div>
+                <div className="item text-xs  rounded-xl">MySQL</div>
+              </div>
             </div>
             <div className="text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
               <Image src={code} width={100} height={100} alt="code-image" />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200 ">
                 2020-2021
               </h3>
-              <p className=" py-2 dark:text-gray-200">
-                Remote Learning and Summer Intern at Nagarro Company (Sibiu)
+              <p className=" py-2 text-xs md:text-sm dark:text-gray-200">
+                Remote Learning and Summer Intern Nagarro Company (Sibiu)
               </p>
-              <h4 className="py-4 text-teal-600">Skills Acquired</h4>
-              <p className=" py-1 dark:text-gray-200">
-                Java / Maven / SpringBoot / Hibernate
-              </p>
-              <p className=" py-1 dark:text-gray-200">Design Patterns</p>
-              <p className=" py-1 dark:text-gray-200">Agile Methodologies</p>
-              <p className=" py-1 dark:text-gray-200">Git</p>
-              <p className=" py-1 dark:text-gray-200">UML Diagrams</p>
+              <hr className="p-2" />
+              <div className="grid grid-cols-2 gap-7 font-courierPrime">
+                <div className="item text-xs rounded-xl ">Java</div>
+
+                <div className="item text-xs  rounded-xl">SpringBoot</div>
+                <div className="item text-xs  rounded-xl">Maven</div>
+                <div className="item text-xs  rounded-xl">Hibernate</div>
+                <div className="item text-xs rounded-xl flex justify-center items-center">
+                  Git
+                </div>
+                <div className="item text-xs rounded-xl">UML Diagrams</div>
+                <div className="item text-xs m-auto  rounded-xl">
+                  Agile Methodologies
+                </div>
+                <div className="item text-xs  rounded-xl">Design Patterns</div>
+              </div>
             </div>
             <div className="text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
               <Image
@@ -182,15 +198,23 @@ export default function Home() {
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">
                 2021
               </h3>
-              <p className=" py-2 dark:text-gray-200">
+              <p className=" py-2 text-xs md:text-sm dark:text-gray-200">
                 Front-end Developer Intern at Creative Tim Company (Bucharest)
               </p>
-              <h4 className="py-4 text-teal-600">Skills Acquired</h4>
-              <p className=" py-1 dark:text-gray-200">Javascript</p>
-              <p className=" py-1 dark:text-gray-200">React.js</p>
-              <p className=" py-1 dark:text-gray-200">Material UI</p>
-              <p className=" py-1 dark:text-gray-200">JSS</p>
-              <p className=" py-1 dark:text-gray-200">UI / UX Best Practices</p>
+              <hr className="p-2" />
+              <div className="grid grid-cols-2 gap-7 font-courierPrime">
+                <div className="item text-xs rounded-xl ">JavaScript</div>
+
+                <div className="item text-xs  rounded-xl">React.js</div>
+                <div className="item text-xs  rounded-xl">MaterialUI</div>
+                <div className="item text-xs  rounded-xl">JSS</div>
+                <div className="item text-xs  rounded-xl">
+                  UI/UX Best Practices
+                </div>
+                <div className="item text-xs  rounded-xl">
+                  Styled Components
+                </div>
+              </div>
             </div>
           </div>
         </section>

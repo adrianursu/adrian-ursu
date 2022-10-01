@@ -49,3 +49,9 @@ a {
   transform: scale(1.02);
   border-radius: inherit;
 }
+
+.item {
+  padding: 6px;
+  background-color: rgba(182, 169, 179, 0.3);
+  border: 2px solid rgba(182, 169, 179, 0.5);
+}
