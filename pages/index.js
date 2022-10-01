@@ -100,21 +100,21 @@ export default function Home() {
                 href="https://www.github.com/adrianursu"
                 rel="noreferrer"
               >
-                <AiFillGithub />
+                <AiFillGithub className="grow" />
               </a>
               <a
                 target="_blank"
                 href="https://www.instagram.com/adrian.ursu8"
                 rel="noreferrer"
               >
-                <AiFillInstagram />
+                <AiFillInstagram className="grow" />
               </a>
               <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.linkedin.com/in/ursu-adrian-9487461b9/"
               >
-                <AiFillLinkedin />
+                <AiFillLinkedin className="grow" />
               </a>
             </div>
           </div>
