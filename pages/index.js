@@ -249,11 +249,11 @@ export default function Home() {
                   alt="maiestria.com"
                 />
 
-                <h4 className="text-xl text-center font-courierPrime text-teal-600">
+                <h4 className="text-xl text-center pt-4 font-courierPrime text-teal-600">
                   www.maiestria.com
                 </h4>
               </a>
-              <p className="text-sm">
+              <p className="text-sm text-center">
                 Developed & Customized wordpress e-commerce for a community of
                 15k+ members.
               </p>
@@ -272,11 +272,11 @@ export default function Home() {
                   src={chat}
                   alt="chat app"
                 />
-                <h4 className="text-xl text-center font-courierPrime text-teal-600">
+                <h4 className="text-xl text-center pt-4 font-courierPrime text-teal-600">
                   myChat
                 </h4>
               </a>
-              <p className="text-sm">
+              <p className="text-sm text-center">
                 Bachelor application developed using MERN Stack + Socket.IO.
                 ChakraUI used as a design system for the frontend.
               </p>
@@ -295,11 +295,11 @@ export default function Home() {
                   src={myPaint}
                   alt="paint done in c#"
                 />
-                <h4 className="text-xl text-center font-courierPrime text-teal-600">
+                <h4 className="text-xl text-center pt-4 font-courierPrime text-teal-600">
                   Paint Clone
                 </h4>
               </a>
-              <p className="text-sm">
+              <p className="text-sm text-center">
                 Paint clone developed in C# using Windows Forms. Added image
                 processing such as zoom, crop with preview, rotate, flip.
               </p>
@@ -318,11 +318,11 @@ export default function Home() {
                   src={dashboard}
                   alt="creative-tim-dashboard"
                 />
-                <h4 className="text-xl text-center font-courierPrime text-teal-600">
+                <h4 className="text-xl text-center pt-4 font-courierPrime text-teal-600">
                   Material Dashboard 2
                 </h4>
               </a>
-              <p className="text-sm">
+              <p className="text-sm text-center">
                 As an Intern at Creative Tim, I was responsible for upgrading
                 one of the products using React + MaterialUI as a design system.
                 I was assigned a mentor who guided me in order to fulfil all the
@@ -343,11 +343,11 @@ export default function Home() {
                   src={dogs}
                   alt="dogs-breeds-project"
                 />
-                <h4 className="text-xl text-center font-courierPrime text-teal-600">
+                <h4 className="text-xl text-center pt-4 font-courierPrime text-teal-600">
                   Dog Breeds
                 </h4>
               </a>
-              <p className="text-sm">
+              <p className="text-sm text-center">
                 Web app for fetching all the dog breeds and photos of them. Also
                 you can add an image to favorites and delete it. (React, React
                 Router, Axios).
@@ -367,11 +367,11 @@ export default function Home() {
                   src={magdacesti}
                   alt="magdacesti.md"
                 />
-                <h4 className="text-xl text-center font-courierPrime text-teal-600">
+                <h4 className="text-xl pt-4 text-center font-courierPrime text-teal-600">
                   www.magdacesti.md
                 </h4>
               </a>
-              <p className="text-sm">
+              <p className="text-sm text-center">
                 Developed & Customized wordpress website of my hometown
                 Măgdăcești.
               </p>
