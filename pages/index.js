@@ -1,12 +1,9 @@
 import Head from "next/head";
 import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
-import { useEffect, useState } from "react";
 import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
 import Image from "next/image";
-import { useTheme } from "next-themes";
 import adrian from "../public/adrian.jpg";
 import maiestria from "../public/laptop.jpg";
 import chat from "../public/chat-bachelor.jpg";
@@ -14,40 +11,9 @@ import myPaint from "../public/my-paint.jpg";
 import dashboard from "../public/creative-tim.jpg";
 import dogs from "../public/dogs.jpg";
 import magdacesti from "../public/magdacesti.jpg";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
-  const { systemTheme, theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  const renderThemeChanger = () => {
-    if (!mounted) return null;
-    const currentTheme = theme === "system" ? systemTheme : theme;
-
-    if (currentTheme === "dark") {
-      return (
-        <BsFillSunFill
-          onClick={() => {
-            setTheme("light");
-          }}
-          className="cursor-pointer text-2xl text-yellow-300 rotate "
-        />
-      );
-    } else {
-      return (
-        <BsFillMoonStarsFill
-          className="cursor-pointer text-2xl text-gray-700"
-          onClick={() => {
-            setTheme("dark");
-          }}
-        />
-      );
-    }
-  };
-
   return (
     <div>
       <Head>
@@ -57,22 +23,7 @@ export default function Home() {
       </Head>
       <main className="bgLight px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
-          <nav className="pt-10 pb-8 mb-6 flex justify-between dark:text-white md:mb-12">
-            <h1 className="font-courierPrime text-xl">&lt;/&gt;</h1>
-            <ul className="flex items-center">
-              <li>{renderThemeChanger()}</li>
-              <li>
-                <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="https://raw.githubusercontent.com/adrianursu/adrianursu.github.io/main/public/cv.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Resume
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <Navbar />
           <div className="text-center pb-10 px-15 md:px-10">
             <h2 className="text-4xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
               Adrian Ursu
