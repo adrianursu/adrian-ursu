@@ -91,7 +91,9 @@ export default function Home() {
                 <div className="item text-xs m-auto  rounded-xl">
                   Agile Methodologies
                 </div>
-                <div className="item text-xs  rounded-xl">Design Patterns</div>
+                <div className="item text-xs  rounded-xl flex justify-center items-center">
+                  Design Patterns
+                </div>
                 <div className="item text-xs  rounded-xl">JUnit</div>
                 <div className="item text-xs  rounded-xl">MySQL</div>
               </div>
