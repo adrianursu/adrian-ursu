@@ -3,12 +3,12 @@ import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
 import Image from "next/image";
-import maiestria from "../public/laptop.jpg";
-import chat from "../public/chat-bachelor.jpg";
-import myPaint from "../public/my-paint.jpg";
-import dashboard from "../public/creative-tim.jpg";
-import dogs from "../public/dogs.jpg";
-import magdacesti from "../public/magdacesti.jpg";
+import maiestria from "../public/1.jpg";
+import chat from "../public/3.jpg";
+import myPaint from "../public/4.jpg";
+import dashboard from "../public/5.jpg";
+import dogs from "../public/6.jpg";
+import magdacesti from "../public/2.jpg";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 
