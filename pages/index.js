@@ -11,6 +11,7 @@ import dogs from "../public/6.jpg";
 import magdacesti from "../public/2.jpg";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
+import Technology from "../components/Technology";
 
 export default function Home() {
   return (
@@ -54,19 +55,16 @@ export default function Home() {
               <hr className="p-2" />
 
               <div className="grid grid-cols-2 gap-7 font-courierPrime">
-                <div className="item text-xs rounded-xl">Data Structures</div>
-
-                <div className="item text-xs flex items-center justify-center  rounded-xl">
-                  OOP
-                </div>
-                <div className="item text-xs  rounded-xl">Algorithms</div>
-                <div className="item text-xs  rounded-xl">Clean Code</div>
-                <div className="item text-xs  rounded-xl">C++</div>
-                <div className="item text-xs rounded-xl">Java</div>
-                <div className="item text-xs  rounded-xl">HTML5</div>
-                <div className="item text-xs  rounded-xl">CSS3</div>
-                <div className="item text-xs  rounded-xl">Linux</div>
-                <div className="item text-xs  rounded-xl">MySQL</div>
+                <Technology name={"Data Structures"} />
+                <Technology name={"OOP"} />
+                <Technology name={"Algorithms"} />
+                <Technology name={"Clean Code"} />
+                <Technology name={"C++"} />
+                <Technology name={"Java"} />
+                <Technology name={"HTML5"} />
+                <Technology name={"CSS3"} />
+                <Technology name={"Linux"} />
+                <Technology name={"MySQL"} />
               </div>
             </div>
             <div className="text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
