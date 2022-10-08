@@ -12,6 +12,11 @@ import magdacesti from "../public/2.jpg";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import Technology from "../components/Technology";
+import {
+  universityTechnologies,
+  nagarroTechnologies,
+  creativeTimTechnologies,
+} from "../utils/technologies";
 
 export default function Home() {
   return (
@@ -55,16 +60,9 @@ export default function Home() {
               <hr className="p-2" />
 
               <div className="grid grid-cols-2 gap-7 font-courierPrime">
-                <Technology name={"Data Structures"} />
-                <Technology name={"OOP"} />
-                <Technology name={"Algorithms"} />
-                <Technology name={"Clean Code"} />
-                <Technology name={"C++"} />
-                <Technology name={"Java"} />
-                <Technology name={"HTML5"} />
-                <Technology name={"CSS3"} />
-                <Technology name={"Linux"} />
-                <Technology name={"MySQL"} />
+                {universityTechnologies.map((technology) => {
+                  return <Technology name={technology} key={technology} />;
+                })}
               </div>
             </div>
             <div className="text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
@@ -77,23 +75,9 @@ export default function Home() {
               </p>
               <hr className="p-2" />
               <div className="grid grid-cols-2 gap-7 font-courierPrime">
-                <div className="item text-xs rounded-xl ">Java</div>
-
-                <div className="item text-xs  rounded-xl">SpringBoot</div>
-                <div className="item text-xs  rounded-xl">Maven</div>
-                <div className="item text-xs  rounded-xl">Hibernate</div>
-                <div className="item text-xs rounded-xl flex justify-center items-center">
-                  Git
-                </div>
-                <div className="item text-xs rounded-xl">UML Diagrams</div>
-                <div className="item text-xs m-auto  rounded-xl">
-                  Agile Methodologies
-                </div>
-                <div className="item text-xs  rounded-xl flex justify-center items-center">
-                  Design Patterns
-                </div>
-                <div className="item text-xs  rounded-xl">JUnit</div>
-                <div className="item text-xs  rounded-xl">MySQL</div>
+                {nagarroTechnologies.map((technology) => {
+                  return <Technology name={technology} key={technology} />;
+                })}
               </div>
             </div>
             <div className="text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
@@ -111,23 +95,9 @@ export default function Home() {
               </p>
               <hr className="p-2" />
               <div className="grid grid-cols-2 gap-7 font-courierPrime">
-                <div className="item text-xs rounded-xl ">JavaScript</div>
-
-                <div className="item text-xs  rounded-xl">React.js</div>
-                <div className="item text-xs  rounded-xl">MaterialUI</div>
-                <div className="item text-xs  rounded-xl">JSS</div>
-                <div className="item text-xs  rounded-xl">
-                  UI/UX Best Practices
-                </div>
-                <div className="item text-xs  rounded-xl">
-                  Styled Components
-                </div>
-                <div className="item text-xs  rounded-xl">State Management</div>
-                <div className="item text-xs flex justify-center items-center  rounded-xl">
-                  Git
-                </div>
-                <div className="item text-xs  rounded-xl">ChakraUI</div>
-                <div className="item text-xs  rounded-xl">TailwindCSS</div>
+                {creativeTimTechnologies.map((technology) => {
+                  return <Technology name={technology} key={technology} />;
+                })}
               </div>
             </div>
           </div>
