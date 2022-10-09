@@ -1,6 +1,6 @@
-import Card from "../Layout/Card";
+import Card from "../../Layout/Card";
 import Image from "next/image";
-import Technology from "../Technology";
+import Technology from "../../Technology";
 
 const ExperienceCard = ({ year, where, technologies, imageSrc, imageAlt }) => {
   return (
