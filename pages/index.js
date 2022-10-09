@@ -18,6 +18,8 @@ import {
   creativeTimTechnologies,
 } from "../utils/technologies";
 import BackgroundInfo from "../components/BackgroundIntro";
+import FlexLargeScreen from "../components/Layout/FlexLarge";
+import ExperienceCard from "../components/ExperienceCard";
 
 export default function Home() {
   return (
@@ -33,62 +35,23 @@ export default function Home() {
           <HeroSection />
         </section>
         <section>
-          {/* <div>
-            <h3 className="text-2xl py-1 dark:text-white md:text-3xl">
-              Educational &#38; Professional Background
-            </h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              During the last years I have actively studied to broaden my
-              understanding and skills in IT. Therefore, I have decided that
-              being a{" "}
-              <span className="text-orange-700 dark:text-teal-500">
-                front-end{" "}
-              </span>
-              developer is the path I want to pursue as this career matches my
-              abilities, needs and passion. I believe that IT is a dynamic,
-              prospective industry, where
-              <span className="text-orange-700 dark:text-teal-500">
-                {" "}
-                self-learning
-              </span>{" "}
-              and taking additional courses is a key to factor to success.
-            </p>
-          </div> */}
           <BackgroundInfo />
-          <div className="lg:flex gap-10">
-            <div className="text-center shadow-2xl p-10 rounded-xl my-10  dark:bg-gray-800 flex-1">
-              <Image src={design} width={100} height={100} alt="image-design" />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">
-                2018-2022
-              </h3>
-              <p className="py-2 text-xs md:text-sm dark:text-gray-200">
-                Bachelor Degree in Computer Science University &quot;Lucian
-                Blaga&quot; of Sibiu, Romania
-              </p>
-              <hr className="p-2" />
-
-              <div className="grid grid-cols-2 gap-7 font-courierPrime">
-                {universityTechnologies.map((technology) => {
-                  return <Technology name={technology} key={technology} />;
-                })}
-              </div>
-            </div>
-            <div className="text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
-              <Image src={code} width={100} height={100} alt="code-image" />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200 ">
-                2020-2021
-              </h3>
-              <p className=" py-2 text-xs md:text-sm dark:text-gray-200">
-                Remote Learning and Summer Intern Nagarro Company (Sibiu)
-              </p>
-              <hr className="p-2" />
-              <div className="grid grid-cols-2 gap-7 font-courierPrime">
-                {nagarroTechnologies.map((technology) => {
-                  return <Technology name={technology} key={technology} />;
-                })}
-              </div>
-            </div>
-            <div className="text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
+          <FlexLargeScreen>
+            <ExperienceCard
+              imageSrc={design}
+              imageAlt="image-design"
+              year={"2019-2022"}
+              where='Bachelor Degree in Computer Science University "Lucian Blaga" of Sibiu, Romania'
+              technologies={universityTechnologies}
+            />
+            <ExperienceCard
+              imageSrc={code}
+              imageAlt="code-image"
+              year={"2020-2021"}
+              where="Remote Learning and Summer Intern Nagarro Company (Sibiu)"
+              technologies={nagarroTechnologies}
+            />
+            {/* <div className="text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
               <Image
                 src={consulting}
                 width={100}
@@ -107,8 +70,15 @@ export default function Home() {
                   return <Technology name={technology} key={technology} />;
                 })}
               </div>
-            </div>
-          </div>
+            </div> */}
+            <ExperienceCard
+              imageSrc={consulting}
+              imageAlt="like-image"
+              year="2021"
+              where="Front-End Developer Intern at Creative Tim Company (Bucharest)"
+              technologies={creativeTimTechnologies}
+            />
+          </FlexLargeScreen>
         </section>
         <section className="py-10">
           <div>
