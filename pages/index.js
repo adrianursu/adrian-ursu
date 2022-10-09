@@ -39,12 +39,18 @@ export default function Home() {
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               During the last years I have actively studied to broaden my
               understanding and skills in IT. Therefore, I have decided that
-              being a <span className="text-teal-500"> front-end </span>
+              being a{" "}
+              <span className="text-orange-700 dark:text-teal-500">
+                front-end{" "}
+              </span>
               developer is the path I want to pursue as this career matches my
               abilities, needs and passion. I believe that IT is a dynamic,
               prospective industry, where
-              <span className="text-teal-500"> self-learning</span> and taking
-              additional courses is a key to factor to success.
+              <span className="text-orange-700 dark:text-teal-500">
+                {" "}
+                self-learning
+              </span>{" "}
+              and taking additional courses is a key to factor to success.
             </p>
           </div>
           <div className="lg:flex gap-10">
@@ -125,7 +131,7 @@ export default function Home() {
                   alt="maiestria.com"
                 />
 
-                <h4 className="text-xl text-center pt-4 font-courierPrime text-teal-600">
+                <h4 className="text-xl text-center pt-4 font-courierPrime text-teal-900">
                   www.maiestria.com
                 </h4>
               </a>
@@ -148,7 +154,7 @@ export default function Home() {
                   src={chat}
                   alt="chat app"
                 />
-                <h4 className="text-xl text-center pt-4 font-courierPrime text-teal-600">
+                <h4 className="text-xl text-center pt-4 font-courierPrime text-teal-900">
                   myChat
                 </h4>
               </a>
@@ -171,7 +177,7 @@ export default function Home() {
                   src={myPaint}
                   alt="paint done in c#"
                 />
-                <h4 className="text-xl text-center pt-4 font-courierPrime text-teal-600">
+                <h4 className="text-xl text-center pt-4 font-courierPrime text-teal-900">
                   Paint Clone
                 </h4>
               </a>
@@ -194,7 +200,7 @@ export default function Home() {
                   src={dashboard}
                   alt="creative-tim-dashboard"
                 />
-                <h4 className="text-xl text-center pt-4 font-courierPrime text-teal-600">
+                <h4 className="text-xl text-center pt-4 font-courierPrime text-teal-900">
                   Material Dashboard 2
                 </h4>
               </a>
@@ -219,7 +225,7 @@ export default function Home() {
                   src={dogs}
                   alt="dogs-breeds-project"
                 />
-                <h4 className="text-xl text-center pt-4 font-courierPrime text-teal-600">
+                <h4 className="text-xl text-center pt-4 font-courierPrime text-teal-900">
                   Dog Breeds
                 </h4>
               </a>
@@ -243,7 +249,7 @@ export default function Home() {
                   src={magdacesti}
                   alt="magdacesti.md"
                 />
-                <h4 className="text-xl pt-4 text-center font-courierPrime text-teal-600">
+                <h4 className="text-xl pt-4 text-center font-courierPrime text-teal-900">
                   www.magdacesti.md
                 </h4>
               </a>
