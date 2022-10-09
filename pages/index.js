@@ -17,6 +17,7 @@ import {
   nagarroTechnologies,
   creativeTimTechnologies,
 } from "../utils/technologies";
+import BackgroundInfo from "../components/BackgroundIntro";
 
 export default function Home() {
   return (
@@ -32,7 +33,7 @@ export default function Home() {
           <HeroSection />
         </section>
         <section>
-          <div>
+          {/* <div>
             <h3 className="text-2xl py-1 dark:text-white md:text-3xl">
               Educational &#38; Professional Background
             </h3>
@@ -52,7 +53,8 @@ export default function Home() {
               </span>{" "}
               and taking additional courses is a key to factor to success.
             </p>
-          </div>
+          </div> */}
+          <BackgroundInfo />
           <div className="lg:flex gap-10">
             <div className="text-center shadow-2xl p-10 rounded-xl my-10  dark:bg-gray-800 flex-1">
               <Image src={design} width={100} height={100} alt="image-design" />
